@@ -7,9 +7,11 @@
     tools:context="org.lebanmohamed.todolist.ListActivity">
 
     <ListView
+        android:id="@+id/listView"
         android:layout_width="368dp"
         android:layout_height="400dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="16dp"
@@ -18,8 +20,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginEnd="8dp"
-        android:id="@+id/listView" />
+        tools:ignore="RtlHardcoded" />
 
     <Button
         android:id="@+id/addbutton"
@@ -31,10 +32,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_blue_light"
-        android:text="Button"
+        android:text="@string/add_button_en"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listView"
+        tools:ignore="RtlHardcoded"
         tools:text="Add Task" />
 
     <Button
@@ -47,11 +49,12 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_red_light"
-        android:text="Button"
+        android:text="@string/delete_button_en"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listView"
         app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlHardcoded"
         tools:text="Delete Task" />
 
     <Button
@@ -63,9 +66,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="8dp"
-        android:text="Update"
+        android:text="@string/update_en"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintLeft_toRightOf="@+id/addbutton"
-        app:layout_constraintRight_toLeftOf="@+id/deletebutton" />
+        app:layout_constraintRight_toLeftOf="@+id/deletebutton"
+        tools:ignore="RtlHardcoded" />
 </android.support.constraint.ConstraintLayout>
